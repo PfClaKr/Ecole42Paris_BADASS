@@ -2,6 +2,7 @@
 Using ubuntu LTS 24.04.2 in Virtual box
 
 
+
 [gns3 installation](https://docs.gns3.com/docs/getting-started/installation/linux/) \
 [docker installation](https://docs.docker.com/engine/install/ubuntu/)
 
