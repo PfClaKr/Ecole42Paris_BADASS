@@ -20,3 +20,11 @@ how build the dockerfile to image.
 ```sh
 sudo docker build -t [container name] -f [dockerfile] .
 ```
+
+useful debug command line
+```sh
+# see arp table
+arp -n
+# delete arp table in interface like eth0 vxlan10
+ip neigh flush dev [interface]
+```

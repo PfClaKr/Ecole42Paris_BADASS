@@ -3,3 +3,4 @@ FROM  frrouting/frr:latest
 ENV DAEMONS="zebra bgpd ospfd isisd"
 COPY daemons /etc/frr/daemons
 RUN chown frr:frr /etc/frr/daemons
+CMD ["bash", "-c", "/usr/lib/frr/docker-start & exec bash"]

@@ -1,4 +1,3 @@
 FROM alpine:latest
 
-RUN apk add vim
-
+RUN apk add vim iperf socat tcpdump
