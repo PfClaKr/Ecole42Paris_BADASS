@@ -1,6 +1,8 @@
 FROM  frrouting/frr:latest
 
+RUN apk update && apk add busybox-extras vim
+
 ENV DAEMONS="zebra bgpd ospfd isisd"
 COPY daemons /etc/frr/daemons
 RUN chown frr:frr /etc/frr/daemons
-CMD ["bash", "-c", "/usr/lib/frr/docker-start & exec bash"]
+CMD ["bash", "-c", "/usr/lib/frr/docker-start"]
