@@ -21,7 +21,7 @@ router bgp 1
 	neighbor 1.1.1.1 update-source lo
 	address-family l2vpn evpn
 		neighbor 1.1.1.1 activate
-    	advertise-all-vni
+	    	advertise-all-vni
 		exit-address-family
 
 router ospf

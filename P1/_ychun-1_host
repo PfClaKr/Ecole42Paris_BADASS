@@ -1,3 +1,4 @@
 FROM alpine:latest
 
-RUN apk update && add vim iperf socat tcpdump busybox-extras
+RUN apk update && apk add vim iperf socat tcpdump busybox-extras
+
